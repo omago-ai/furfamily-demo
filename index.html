@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurFamily 毛孩家族 | 尖沙咀寵物生活專門店</title>
+  <meta name="description" content="毛孩家族 — 尖沙咀寵物美容、寵物用品、寵物酒店。嚴選優質品牌，專業美容師團隊。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-alt: #f5f5f5;
+      --bg-warm: #faf7f4;
+      --black: #1a1a1a;
+      --dark: #333333;
+      --mid: #666666;
+      --light: #999999;
+      --lighter: #cccccc;
+      --border: #e8e8e8;
+      --border-light: #f0f0f0;
+      --accent: #e85d3a;
+      --accent-hover: #d14e2d;
+      --accent-light: #fff0ec;
+      --green: #2d8f4e;
+      --green-light: #e8f5ed;
+      --teal: #1a8a7d;
+      --purple: #6b4fa0;
+      --yellow: #f5a623;
+      --navy: #1e3a5f;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans TC', 'Inter', -apple-system, sans-serif;
+      color: var(--black);
+      line-height: 1.6;
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; }
+
+    /* ── PROMO BAR ── */
+    .promo-bar {
+      background: var(--black);
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    .promo-bar strong { color: var(--yellow); }
+
+    /* ── TOP NAV ── */
+    .top-nav {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .top-nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .top-nav-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-logo {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-logo-mark {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-mark svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .nav-search {
+      flex: 1;
+      max-width: 400px;
+      margin: 0 32px;
+      position: relative;
+    }
+
+    .nav-search input {
+      width: 100%;
+      padding: 10px 16px 10px 40px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      background: var(--bg-alt);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .nav-search input:focus {
+      border-color: var(--accent);
+      background: var(--bg);
+    }
+
+    .nav-search svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: var(--light);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-action-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      font-size: 11px;
+      color: var(--mid);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .nav-action-item:hover { color: var(--black); }
+
+    .lang-switcher { position: relative; cursor: pointer; }
+    .lang-switcher-menu {
+      display: none; position: absolute; top: calc(100% + 4px); right: -8px;
+      background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1); min-width: 140px; z-index: 200;
+      padding: 4px 0;
+    }
+    .lang-switcher.open .lang-switcher-menu { display: block; }
+    .lang-switcher-menu a { display: block; padding: 10px 16px; font-size: 13px; font-weight: 500; color: var(--mid); transition: background 0.15s; }
+    .lang-switcher-menu a:hover { background: var(--bg-alt); color: var(--black); }
+    .lang-switcher-menu a.active-lang { color: var(--accent); font-weight: 700; }
+
+    .nav-action-item svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .nav-wa {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    .nav-wa:hover { opacity: 0.9; }
+
+    .nav-wa svg { width: 16px; height: 16px; }
+
+    /* Category nav */
+    .cat-nav {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border-top: 1px solid var(--border-light);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .cat-nav::-webkit-scrollbar { display: none; }
+
+    .cat-nav a {
+      padding: 12px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--mid);
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .cat-nav a:hover {
+      color: var(--black);
+      border-bottom-color: var(--black);
+    }
+
+    .cat-nav a.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .cat-nav-highlight {
+      color: var(--accent) !important;
+      font-weight: 700 !important;
+    }
+
+    .nav-mobile-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-mobile-btn svg { width: 24px; height: 24px; color: var(--black); }
+
+    /* ── HERO CAROUSEL ── */
+    .hero-carousel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-slide {
+      position: relative;
+      height: 440px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-slide-bg {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-slide-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-slide-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+    }
+
+    .hero-slide-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+      color: #fff;
+    }
+
+    .hero-slide-tag {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-slide h2 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      max-width: 500px;
+    }
+
+    .hero-slide p {
+      font-size: 16px;
+      opacity: 0.85;
+      max-width: 440px;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--black);
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+
+    .hero-btn:hover { background: #f0f0f0; }
+
+    .hero-btn-accent {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .hero-btn-accent:hover { background: var(--accent-hover); }
+
+    .hero-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 5;
+    }
+
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .hero-dot.active { background: #fff; width: 24px; border-radius: 4px; }
+
+    /* ── CATEGORY TILES ── */
+    .categories {
+      padding: 48px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .section-header h2 {
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .section-header a {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+
+    .cat-tile {
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .cat-tile:hover { transform: translateY(-4px); }
+
+    .cat-tile-img {
+      aspect-ratio: 1;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      background: var(--bg-alt);
+    }
+
+    .cat-tile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cat-tile h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 2px;
+    }
+
+    .cat-tile p {
+      font-size: 11px;
+      color: var(--light);
+    }
+
+    /* ── CAMPAIGN BANNERS ── */
+    .campaigns {
+      padding: 0 24px 48px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .campaign-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .campaign-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 2.2/1;
+      cursor: pointer;
+    }
+
+    .campaign-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .campaign-card:hover img { transform: scale(1.03); }
+
+    .campaign-overlay {
+      position: absolute;
+      inset: 0;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .campaign-overlay-dark {
+      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 70%);
+      color: #fff;
+    }
+
+    .campaign-overlay-light {
+      background: linear-gradient(to right, rgba(255,255,255,0.92) 30%, rgba(255,255,255,0.5) 70%, transparent);
+      color: var(--black);
+    }
+
+    .campaign-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+    }
+
+    .campaign-tag-green { color: var(--green); }
+    .campaign-tag-accent { color: var(--accent); }
+
+    .campaign-overlay h3 {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .campaign-overlay p {
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    /* ── SERVICES STRIP ── */
+    .services-strip {
+      background: var(--bg-alt);
+      padding: 48px 24px;
+    }
+
+    .services-strip-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .svc-card {
+      background: var(--bg);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .svc-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+
+    .svc-card-img {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+
+    .svc-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .svc-card-body {
+      padding: 18px 20px;
+    }
+
+    .svc-card-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .svc-card-body p {
+      font-size: 12px;
+      color: var(--mid);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .svc-price-tag {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    /* ── PRODUCT GRID (bestsellers) ── */
+    .products {
+      padding: 48px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .product-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .product-tab {
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--mid);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .product-tab:hover { border-color: var(--dark); color: var(--dark); }
+
+    .product-tab.active {
+      background: var(--black);
+      color: #fff;
+      border-color: var(--black);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .prod-card {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .prod-card:hover { transform: translateY(-3px); }
+
+    .prod-card-img {
+      aspect-ratio: 1;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--bg-alt);
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .prod-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prod-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .prod-badge-hot {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .prod-badge-new {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    .prod-card-brand {
+      font-size: 11px;
+      color: var(--light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .prod-card h3 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .prod-card-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .prod-card-price span {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--lighter);
+      text-decoration: line-through;
+      margin-left: 6px;
+    }
+
+    /* ── BRANDS MARQUEE ── */
+    .brands {
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-alt);
+    }
+
+    .brands-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .brands-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--light);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .brands-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--lighter);
+      letter-spacing: 2px;
+      transition: color 0.2s;
+    }
+
+    .brand-name:hover { color: var(--mid); }
+
+    /* ── GROOMING PRICING ── */
+    .pricing-section {
+      padding: 48px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .pricing-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .pricing-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .pricing-card-head {
+      padding: 24px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .pricing-card-head h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .pricing-card-head p {
+      font-size: 13px;
+      color: var(--mid);
+    }
+
+    .pricing-rows {
+      padding: 8px 24px;
+    }
+
+    .pricing-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 14px;
+    }
+
+    .pricing-row:last-child { border-bottom: none; }
+
+    .pricing-row .label {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .pricing-row .price {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .pricing-card-cta {
+      padding: 16px 24px 24px;
+    }
+
+    .pricing-card-cta a {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: var(--black);
+      color: #fff;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+
+    .pricing-card-cta a:hover { background: var(--dark); }
+
+    /* ── INFO CARDS (why choose us) ── */
+    .info-strip {
+      padding: 48px 24px;
+      background: var(--bg-warm);
+    }
+
+    .info-strip-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--bg);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+    }
+
+    .info-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--accent);
+    }
+
+    .info-item h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .info-item p {
+      font-size: 12px;
+      color: var(--mid);
+      line-height: 1.5;
+    }
+
+    /* ── FAQ ── */
+    .faq {
+      padding: 48px 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq h2 {
+      font-size: 22px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+
+    .faq-q {
+      padding: 18px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--black);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      user-select: none;
+    }
+
+    .faq-q svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      color: var(--light);
+      transition: transform 0.25s;
+    }
+
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+
+    .faq-a {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.8;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding-bottom: 0;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding-bottom: 18px;
+    }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      margin: 0 24px 48px;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      background: var(--black);
+      border-radius: 16px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+      color: #fff;
+    }
+
+    .cta-banner h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .cta-banner p {
+      font-size: 15px;
+      opacity: 0.6;
+    }
+
+    .cta-banner-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .cta-btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+
+    .cta-btn-wa:hover { opacity: 0.9; }
+
+    .cta-btn-tel {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .cta-btn-tel:hover { background: rgba(255,255,255,0.15); }
+
+    /* ── CONTACT / MAP ── */
+    .contact-section {
+      padding: 0 24px 48px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 24px;
+    }
+
+    .contact-info-card {
+      background: var(--bg-alt);
+      border-radius: 14px;
+      padding: 32px;
+    }
+
+    .contact-info-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: var(--mid);
+    }
+
+    .contact-row strong {
+      color: var(--black);
+      min-width: 72px;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .contact-map {
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--bg-alt);
+      min-height: 360px;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      border: none;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--black);
+      color: rgba(255,255,255,0.5);
+      padding: 48px 24px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+
+    .footer-brand {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .footer-col p {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .footer-col h4 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 14px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      line-height: 2;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: rgba(255,255,255,0.75); }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 32px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .footer-social a {
+      width: 32px;
+      height: 32px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .footer-social a:hover { background: rgba(255,255,255,0.12); }
+
+    .footer-social svg { width: 14px; height: 14px; color: rgba(255,255,255,0.4); }
+
+    /* ── WIDGET ── */
+    #omago-chat-widget {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .product-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer-inner { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-search { display: none; }
+      .nav-mobile-btn { display: block; }
+      .nav-actions { gap: 12px; }
+      .nav-action-item { display: none !important; }
+      .cat-nav { padding: 0 8px; }
+      .cat-nav a { padding: 10px 14px; font-size: 12px; }
+
+      .hero-slide { height: 320px; }
+      .hero-slide h2 { font-size: 26px; }
+      .hero-slide p { font-size: 14px; }
+
+      .cat-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+      .campaign-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-layout { grid-template-columns: 1fr; }
+      .info-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .cta-banner { grid-template-columns: 1fr; text-align: center; padding: 32px 24px; }
+      .cta-banner h2 { font-size: 22px; }
+      .cta-banner-actions { justify-content: center; flex-wrap: wrap; }
+
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; gap: 4px; }
+
+      .section-header h2 { font-size: 18px; }
+    }
+
+    @media (max-width: 480px) {
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-grid { grid-template-columns: 1fr; }
+      .info-grid { grid-template-columns: 1fr; }
+      .hero-slide { height: 280px; }
+      .hero-slide h2 { font-size: 22px; }
+      .hero-slide-content { padding: 0 20px; }
+      .promo-bar { font-size: 12px; }
+      .product-tab { padding: 6px 14px; font-size: 12px; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+
+    /* Mobile nav overlay */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      z-index: 200;
+      padding: 80px 24px 24px;
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active { display: block; }
+
+    .mobile-menu-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu-close svg { width: 24px; height: 24px; color: var(--black); }
+
+    .mobile-menu a {
+      display: block;
+      padding: 16px 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--black);
+      border-bottom: 1px solid var(--border-light);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PROMO BAR -->
+  <div class="promo-bar">
+    <strong>新客優惠</strong> 首次美容即享 9 折 — 預約時報「WELCOME10」即可使用
+  </div>
+
+  <!-- TOP NAV -->
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <div class="top-nav-main">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-mark">
+            <svg viewBox="0 0 32 32" fill="#1a1a1a">
+              <!-- Geometric pet silhouette: single path, two ears + rounded body -->
+              <path d="M2 14 L7 3 C7.5 2 9 2 9.5 3 L12 9 L20 9 L22.5 3 C23 2 24.5 2 25 3 L30 14 L30 25 C30 29 26 31 16 31 C6 31 2 29 2 25 Z"/>
+              <!-- Nose accent -->
+              <circle cx="16" cy="22" r="2" fill="#fff"/>
+            </svg>
+          </div>
+          <span>FurFamily</span>
+        </a>
+        <div class="nav-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" placeholder="搜尋產品、品牌或服務...">
+        </div>
+        <div class="nav-actions">
+          <div class="nav-action-item lang-switcher">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            繁中
+            <div class="lang-switcher-menu">
+              <a href="index.html" class="active-lang">繁體中文</a>
+              <a href="en.html">English</a>
+              <a href="ja.html">日本語</a>
+              <a href="ko.html">한국어</a>
+            </div>
+          </div>
+          <a href="#" class="nav-action-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            帳戶
+          </a>
+          <a href="#" class="nav-action-item" style="position:relative;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span style="position:absolute;top:-2px;right:-6px;background:var(--accent);color:#fff;font-size:9px;font-weight:700;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;">2</span>
+            購物袋
+          </a>
+          <a href="https://wa.me/85262341234" class="nav-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <button class="nav-mobile-btn" onclick="document.querySelector('.mobile-menu').classList.toggle('active')" aria-label="選單">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cat-nav">
+        <a href="#" class="active">首頁</a>
+        <a href="#grooming">寵物美容</a>
+        <a href="#hotel">寵物酒店</a>
+        <a href="#products-section">狗狗專區</a>
+        <a href="#products-section">貓咪專區</a>
+        <a href="#products-section">糧食</a>
+        <a href="#products-section">零食</a>
+        <a href="#products-section">用品</a>
+        <a href="#brands-section">品牌</a>
+        <a href="#faq-section">常見問題</a>
+        <a href="#contact-section" class="cat-nav-highlight">門市資訊</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" onclick="document.querySelector('.mobile-menu').classList.remove('active')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="#" onclick="document.querySelector('.mobile-menu').classList.remove('active')">首頁</a>
+    <a href="#grooming" onclick="document.querySelector('.mobile-menu').classList.remove('active')">寵物美容</a>
+    <a href="#hotel" onclick="document.querySelector('.mobile-menu').classList.remove('active')">寵物酒店</a>
+    <a href="#products-section" onclick="document.querySelector('.mobile-menu').classList.remove('active')">狗狗專區</a>
+    <a href="#products-section" onclick="document.querySelector('.mobile-menu').classList.remove('active')">貓咪專區</a>
+    <a href="#products-section" onclick="document.querySelector('.mobile-menu').classList.remove('active')">糧食 & 零食</a>
+    <a href="#brands-section" onclick="document.querySelector('.mobile-menu').classList.remove('active')">品牌</a>
+    <a href="#faq-section" onclick="document.querySelector('.mobile-menu').classList.remove('active')">常見問題</a>
+    <a href="#contact-section" onclick="document.querySelector('.mobile-menu').classList.remove('active')">門市資訊</a>
+  </div>
+
+  <!-- HERO CAROUSEL -->
+  <div class="hero-carousel">
+    <div class="hero-slide">
+      <div class="hero-slide-bg">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1400&q=80" alt="毛孩家族">
+      </div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="hero-slide-tag">新客優惠</div>
+        <h2>首次美容即享 9 折<br>專業美容師團隊為你服務</h2>
+        <p>八位認證美容師、獨立美容空間、天然溫和洗護產品。預約時報「WELCOME10」即可享用。</p>
+        <a href="https://wa.me/85262341234" class="hero-btn hero-btn-accent">立即預約美容</a>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <div class="hero-dot active"></div>
+      <div class="hero-dot"></div>
+      <div class="hero-dot"></div>
+    </div>
+  </div>
+
+  <!-- CATEGORY TILES -->
+  <section class="categories">
+    <div class="section-header">
+      <h2>探索分類</h2>
+      <a href="#">瀏覽全部 →</a>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=400&q=80" alt="寵物美容">
+        </div>
+        <h3>寵物美容</h3>
+        <p>專業造型修剪</p>
+      </div>
+      <div class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&q=80" alt="寵物酒店">
+        </div>
+        <h3>寵物酒店</h3>
+        <p>舒適寄宿服務</p>
+      </div>
+      <div class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400&q=80" alt="狗糧">
+        </div>
+        <h3>狗狗糧食</h3>
+        <p>優質進口品牌</p>
+      </div>
+      <div class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&q=80" alt="貓咪">
+        </div>
+        <h3>貓咪專區</h3>
+        <p>糧食 · 用品 · 玩具</p>
+      </div>
+      <div class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1535930749574-1399327ce78f?w=400&q=80" alt="零食">
+        </div>
+        <h3>零食 & 營養</h3>
+        <p>健康天然之選</p>
+      </div>
+      <div class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&q=80" alt="用品">
+        </div>
+        <h3>玩具 & 用品</h3>
+        <p>床 · 碗 · 牽繩</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPAIGN BANNERS -->
+  <section class="campaigns">
+    <div class="campaign-grid">
+      <div class="campaign-card">
+        <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=800&q=80" alt="美容優惠">
+        <div class="campaign-overlay campaign-overlay-dark">
+          <div class="campaign-tag campaign-tag-accent">限時優惠</div>
+          <h3>全套美容套餐<br>小型犬 HK$480 起</h3>
+          <p>包沖涼、造型、剪甲、清耳 — 一次搞掂</p>
+        </div>
+      </div>
+      <div class="campaign-card">
+        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=80" alt="寵物酒店">
+        <div class="campaign-overlay campaign-overlay-dark">
+          <div class="campaign-tag campaign-tag-green">新服務</div>
+          <h3>寵物酒店<br>HK$380 / 晚起</h3>
+          <p>獨立房間、每日更新、安心出遊</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-strip" id="grooming">
+    <div class="services-strip-inner">
+      <div class="section-header">
+        <h2>我們的服務</h2>
+        <a href="#grooming">查看全部服務 →</a>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card">
+          <div class="svc-card-img">
+            <img src="https://images.unsplash.com/photo-1583337130417-13104dec14c3?w=600&q=80" alt="沖涼吹乾">
+          </div>
+          <div class="svc-card-body">
+            <h3>基本沖涼吹乾</h3>
+            <p>沖涼、吹乾、梳毛、清耳、剪甲及肛門腺處理</p>
+            <div class="svc-price-tag">HK$280 起</div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-card-img">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="全套美容">
+          </div>
+          <div class="svc-card-body">
+            <h3>全套美容造型</h3>
+            <p>基本沖涼 + 全身造型修剪、腳底毛處理</p>
+            <div class="svc-price-tag">HK$480 起</div>
+          </div>
+        </div>
+        <div class="svc-card" id="hotel">
+          <div class="svc-card-img">
+            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80" alt="寵物酒店">
+          </div>
+          <div class="svc-card-body">
+            <h3>寵物酒店寄宿</h3>
+            <p>獨立房間、每日散步、WhatsApp 每日照片更新</p>
+            <div class="svc-price-tag">HK$380 / 晚</div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-card-img">
+            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80" alt="貓咪美容">
+          </div>
+          <div class="svc-card-body">
+            <h3>貓咪美容</h3>
+            <p>獨立安靜空間，溫和流程，減低貓咪壓力</p>
+            <div class="svc-price-tag">HK$550 起</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROOMING PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-header">
+      <h2>美容收費一覽</h2>
+      <a href="https://wa.me/85262341234">WhatsApp 查詢報價 →</a>
+    </div>
+    <div class="pricing-layout">
+      <div class="pricing-card">
+        <div class="pricing-card-head">
+          <h3>基本沖涼吹乾</h3>
+          <p>沖涼、吹乾、梳毛、清耳、剪甲、肛門腺</p>
+        </div>
+        <div class="pricing-rows">
+          <div class="pricing-row"><span class="label">小型犬（5kg 以下）</span><span class="price">HK$280 起</span></div>
+          <div class="pricing-row"><span class="label">中型犬（5-15kg）</span><span class="price">HK$380 起</span></div>
+          <div class="pricing-row"><span class="label">大型犬（15kg 以上）</span><span class="price">HK$480 起</span></div>
+          <div class="pricing-row"><span class="label">貓咪</span><span class="price">HK$550 起</span></div>
+        </div>
+        <div class="pricing-card-cta">
+          <a href="https://wa.me/85262341234">WhatsApp 預約</a>
+        </div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-card-head">
+          <h3>全套美容造型</h3>
+          <p>包含基本沖涼所有項目 + 全身造型修剪</p>
+        </div>
+        <div class="pricing-rows">
+          <div class="pricing-row"><span class="label">小型犬（5kg 以下）</span><span class="price">HK$480 起</span></div>
+          <div class="pricing-row"><span class="label">中型犬（5-15kg）</span><span class="price">HK$580 起</span></div>
+          <div class="pricing-row"><span class="label">大型犬（15kg 以上）</span><span class="price">HK$680 起</span></div>
+        </div>
+        <div class="pricing-card-cta">
+          <a href="https://wa.me/85262341234">WhatsApp 預約</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px;">
+      <div class="pricing-card">
+        <div class="pricing-card-head" style="padding:18px 24px;">
+          <h3 style="font-size:15px;">無麻醉潔齒</h3>
+          <p style="font-size:12px;">超聲波去牙石，配合美容進行</p>
+        </div>
+        <div style="padding:12px 24px 18px;"><span class="svc-price-tag">+HK$150</span></div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-card-head" style="padding:18px 24px;">
+          <h3 style="font-size:15px;">深層去底毛</h3>
+          <p style="font-size:12px;">適合換毛期雙層毛品種</p>
+        </div>
+        <div style="padding:12px 24px 18px;"><span class="svc-price-tag">+HK$200</span></div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-card-head" style="padding:18px 24px;">
+          <h3 style="font-size:15px;">剪甲 Walk-in</h3>
+          <p style="font-size:12px;">無需預約，即到即剪</p>
+        </div>
+        <div style="padding:12px 24px 18px;"><span class="svc-price-tag">HK$80</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products-section">
+    <div class="section-header">
+      <h2>熱賣產品</h2>
+      <a href="#">瀏覽全部 →</a>
+    </div>
+    <div class="product-tabs">
+      <button class="product-tab active">全部</button>
+      <button class="product-tab">狗糧</button>
+      <button class="product-tab">貓糧</button>
+      <button class="product-tab">零食</button>
+      <button class="product-tab">保健品</button>
+      <button class="product-tab">玩具</button>
+    </div>
+    <div class="product-grid">
+      <div class="prod-card">
+        <div class="prod-card-img">
+          <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400&q=80" alt="Orijen">
+          <div class="prod-badge prod-badge-hot">熱賣</div>
+        </div>
+        <div class="prod-card-brand">ORIJEN</div>
+        <h3>Orijen Original 成犬糧 6kg</h3>
+        <div class="prod-card-price">HK$680</div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-card-img">
+          <img src="https://images.unsplash.com/photo-1535930749574-1399327ce78f?w=400&q=80" alt="Royal Canin">
+          <div class="prod-badge prod-badge-new">新品</div>
+        </div>
+        <div class="prod-card-brand">ROYAL CANIN</div>
+        <h3>Royal Canin 室內成貓糧 4kg</h3>
+        <div class="prod-card-price">HK$385</div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-card-img">
+          <img src="https://images.unsplash.com/photo-1583337130417-13104dec14c3?w=400&q=80" alt="Acana">
+        </div>
+        <div class="prod-card-brand">ACANA</div>
+        <h3>Acana Grasslands 全犬糧 2kg</h3>
+        <div class="prod-card-price">HK$298 <span>HK$350</span></div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-card-img">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&q=80" alt="Open Farm">
+        </div>
+        <div class="prod-card-brand">OPEN FARM</div>
+        <h3>Open Farm 放養雞肉貓糧 1.8kg</h3>
+        <div class="prod-card-price">HK$328</div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-card-img">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&q=80" alt="Ziwi Peak">
+          <div class="prod-badge prod-badge-hot">熱賣</div>
+        </div>
+        <div class="prod-card-brand">ZIWI PEAK</div>
+        <h3>Ziwi Peak 風乾鹿肉犬糧 1kg</h3>
+        <div class="prod-card-price">HK$420</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands" id="brands-section">
+    <div class="brands-inner">
+      <div class="brands-label">嚴選合作品牌</div>
+      <div class="brands-row">
+        <div class="brand-name">ROYAL CANIN</div>
+        <div class="brand-name">ORIJEN</div>
+        <div class="brand-name">ACANA</div>
+        <div class="brand-name">OPEN FARM</div>
+        <div class="brand-name">ZIWI PEAK</div>
+        <div class="brand-name">KONG</div>
+        <div class="brand-name">RUFFWEAR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOG / CAT ZONE SPLIT -->
+  <section style="padding:48px 24px;max-width:1280px;margin:0 auto;">
+    <div class="section-header">
+      <h2>按毛孩選購</h2>
+      <a href="#">瀏覽全部 →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <!-- DOG ZONE -->
+      <div style="background:var(--bg-alt);border-radius:16px;overflow:hidden;">
+        <div style="aspect-ratio:2.4/1;overflow:hidden;position:relative;">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="狗狗專區" style="width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5),transparent 60%);"></div>
+          <div style="position:absolute;bottom:20px;left:24px;color:#fff;">
+            <div style="font-size:24px;font-weight:800;">狗狗專區</div>
+            <div style="font-size:13px;opacity:0.8;">糧食 · 零食 · 玩具 · 保健品</div>
+          </div>
+        </div>
+        <div style="padding:20px 24px;display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">乾糧</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">濕糧</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">零食</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">玩具</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">保健品</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">床 & 窩</a>
+        </div>
+      </div>
+      <!-- CAT ZONE -->
+      <div style="background:var(--bg-alt);border-radius:16px;overflow:hidden;">
+        <div style="aspect-ratio:2.4/1;overflow:hidden;position:relative;">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=800&q=80" alt="貓咪專區" style="width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5),transparent 60%);"></div>
+          <div style="position:absolute;bottom:20px;left:24px;color:#fff;">
+            <div style="font-size:24px;font-weight:800;">貓咪專區</div>
+            <div style="font-size:13px;opacity:0.8;">糧食 · 貓砂 · 抓板 · 營養品</div>
+          </div>
+        </div>
+        <div style="padding:20px 24px;display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">乾糧</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">濕糧</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">貓砂</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">抓板</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">玩具</a>
+          <a href="#" style="padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:600;color:var(--dark);">營養品</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM STRIP -->
+  <section style="padding:0 24px 48px;max-width:1280px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div style="background:var(--accent-light);border-radius:14px;padding:28px 24px;text-align:center;">
+        <div style="font-size:28px;margin-bottom:8px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+        </div>
+        <div style="font-size:16px;font-weight:800;color:var(--black);margin-bottom:4px;">專業美容</div>
+        <div style="font-size:12px;color:var(--mid);">8 位認證美容師<br>獨立空間 · 天然產品</div>
+        <a href="#grooming" style="display:inline-block;margin-top:12px;font-size:12px;font-weight:700;color:var(--accent);">了解更多 →</a>
+      </div>
+      <div style="background:var(--green-light);border-radius:14px;padding:28px 24px;text-align:center;">
+        <div style="font-size:28px;margin-bottom:8px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div style="font-size:16px;font-weight:800;color:var(--black);margin-bottom:4px;">寵物酒店</div>
+        <div style="font-size:12px;color:var(--mid);">獨立房間 · 每日更新<br>HK$380 / 晚起</div>
+        <a href="#hotel" style="display:inline-block;margin-top:12px;font-size:12px;font-weight:700;color:var(--green);">了解更多 →</a>
+      </div>
+      <div style="background:#f0ecf8;border-radius:14px;padding:28px 24px;text-align:center;">
+        <div style="font-size:28px;margin-bottom:8px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <div style="font-size:16px;font-weight:800;color:var(--black);margin-bottom:4px;">優質用品</div>
+        <div style="font-size:12px;color:var(--mid);">嚴選進口品牌<br>糧食 · 零食 · 保健品</div>
+        <a href="#products-section" style="display:inline-block;margin-top:12px;font-size:12px;font-weight:700;color:var(--purple);">瀏覽產品 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="info-strip">
+    <div class="info-strip-inner">
+      <div class="section-header" style="margin-bottom:28px;">
+        <h2>為什麼選擇毛孩家族</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          </div>
+          <div>
+            <h4>8 位認證美容師</h4>
+            <p>全部經專業培訓，平均五年以上經驗</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>天然洗護產品</h4>
+            <p>日本及澳洲進口，不含 SLS 及人工色素</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h4>WhatsApp 即時回覆</h4>
+            <p>通常 15 分鐘內回覆，預約查詢超方便</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <div>
+            <h4>獨立美容空間</h4>
+            <p>一對一處理，唔會同其他寵物混喺一齊</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq-section">
+    <h2>常見問題</h2>
+
+    <div class="faq-item open">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        狗狗幾耐應該做一次美容？
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a">一般建議每4至6星期做一次全套美容。長毛品種（如貴婦狗、比熊）建議每3至4星期修剪一次以防打結。短毛品種可以4至8星期沖涼一次。我們的美容師會根據你的毛孩情況提供建議。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        可以 walk-in 嗎？定係一定要預約？
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a">剪甲歡迎 walk-in。沖涼及全套美容建議提前 WhatsApp 預約，特別是週末名額有限。一般可安排到2至3日內的檔期。急件可聯絡我們查詢。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        寄宿需要什麼疫苗紀錄？
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a">狗狗需提供有效的 DHPPi（五合一）及狂犬病疫苗證明，貓咪需 FVRCP（三合一）疫苗證明。疫苗須於寄宿前最少兩星期完成接種，並需在入住前30天內完成體外驅蟲。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        美容時我可以留低陪住嗎？
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a">大部分毛孩在主人不在場時會更冷靜。我們建議家長在等候區休息或外出，完成後會立即 WhatsApp 通知你。如有特殊需要，歡迎提前告知。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        全套美容需要幾耐？
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a">視乎品種及毛髮狀況，一般1.5至3小時。小型犬約1.5至2小時，中大型犬約2至3小時。開始前會告知預計完成時間。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        你們有寵物接送服務嗎？
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a">有，我們提供九龍區寵物專車接送，HK$150起（單程）。司機受過寵物處理培訓，車廂配備安全設備。請 WhatsApp 查詢及預約。</div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div>
+      <h2>準備好預約了嗎？</h2>
+      <p>WhatsApp 我們即可預約美容、查詢寄宿或了解產品。通常 15 分鐘內回覆。</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="https://wa.me/85262341234" class="cta-btn-wa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp 預約
+      </a>
+      <a href="tel:+85223761234" class="cta-btn-tel">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +852 2376 8491
+      </a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact-section">
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <h3>門市資訊</h3>
+        <div class="contact-row"><strong>地址</strong><span>九龍尖沙咀漆咸道南23號 地下</span></div>
+        <div class="contact-row"><strong>電話</strong><span>+852 2376 8491</span></div>
+        <div class="contact-row"><strong>WhatsApp</strong><span>+852 6234 7128</span></div>
+        <div class="contact-row"><strong>Instagram</strong><span>@furfamily.hk</span></div>
+        <div class="contact-row"><strong>營業時間</strong><span>星期一至六 10:00 – 20:00<br>星期日 11:00 – 19:00<br>公眾假期照常營業</span></div>
+        <div class="contact-row"><strong>交通</strong><span>港鐵尖沙咀站 B2 出口步行3分鐘</span></div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1845.7!2d114.174!3d22.297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400e3a3a3a3a3%3A0x0!2sChatham+Road+South!5e0!3m2!1szh-TW!2shk!4v1700000000000!5m2!1szh-TW!2shk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">毛孩家族 FurFamily</div>
+        <p>九龍尖沙咀漆咸道南23號 地下<br>+852 2376 8491<br>WhatsApp: +852 6234 7128</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/85262341234" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>服務</h4>
+        <a href="#grooming">寵物美容</a>
+        <a href="#hotel">寵物酒店</a>
+        <a href="#">幼犬社交班</a>
+        <a href="#">寵物專車</a>
+        <a href="#">剪甲 Walk-in</a>
+      </div>
+      <div class="footer-col">
+        <h4>產品</h4>
+        <a href="#products-section">狗糧</a>
+        <a href="#products-section">貓糧</a>
+        <a href="#products-section">零食</a>
+        <a href="#products-section">保健品</a>
+        <a href="#products-section">玩具 & 用品</a>
+      </div>
+      <div class="footer-col">
+        <h4>品牌</h4>
+        <a href="#">Royal Canin</a>
+        <a href="#">Orijen</a>
+        <a href="#">Acana</a>
+        <a href="#">Open Farm</a>
+        <a href="#">Ziwi Peak</a>
+      </div>
+      <div class="footer-col">
+        <h4>營業時間</h4>
+        <p>星期一至六 10:00–20:00<br>星期日 11:00–19:00<br>公眾假期照常</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 FurFamily 毛孩家族. All rights reserved.</span>
+      <span><a href="#">私隱政策</a> · <a href="#">使用條款</a></span>
+    </div>
+  </footer>
+
+  <!-- OMAGO CHAT WIDGET -->
+  <div id="omago-chat-widget"></div>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var t = document.querySelector(this.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+
+    // Product tabs (visual only)
+    document.querySelectorAll('.product-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.product-tab').forEach(function(t) { t.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+
+    // Language switcher (click toggle)
+    document.querySelectorAll('.lang-switcher').forEach(function(sw) {
+      sw.addEventListener('click', function(e) {
+        if (e.target.closest('.lang-switcher-menu')) return;
+        e.stopPropagation();
+        sw.classList.toggle('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.lang-switcher').forEach(function(sw) { sw.classList.remove('open'); });
+    });
+  </script>
+
+</body>
+</html>
