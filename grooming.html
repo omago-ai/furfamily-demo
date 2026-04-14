@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寵物美容服務 | FurFamily 毛孩家族</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #e85d3a; --accent-hover: #d14e2d; --black: #1a1a1a; --dark: #333; --mid: #666; --light: #999; --border: #e8e8e8; --bg-alt: #f5f5f5; --green: #2d8f4e; --yellow: #f5a623; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans TC', 'Inter', -apple-system, sans-serif; color: var(--black); line-height: 1.7; background: #fff; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    .site-nav { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
+    .site-nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .site-nav a.logo { font-size: 18px; font-weight: 800; color: var(--black); text-decoration: none; }
+    .site-nav a.back { font-size: 14px; color: var(--mid); }
+    .content { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { color: var(--mid); font-size: 15px; margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 12px; }
+    p, li { font-size: 15px; color: var(--dark); }
+    ul, ol { padding-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+    th { background: var(--bg-alt); text-align: left; padding: 12px; font-weight: 600; border-bottom: 2px solid var(--border); }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    .in-stock { color: var(--green); font-weight: 600; }
+    .low-stock { color: var(--yellow); font-weight: 600; }
+    .out-of-stock { color: #d32f2f; font-weight: 600; }
+    .note { background: var(--bg-alt); border-left: 3px solid var(--accent); padding: 16px; margin: 16px 0; border-radius: 0 8px 8px 0; font-size: 14px; }
+    .price-card { background: var(--bg-alt); border-radius: 12px; padding: 20px; margin: 12px 0; }
+    .price-card h4 { font-size: 16px; margin-bottom: 8px; }
+    .price-card .price { font-size: 24px; font-weight: 800; color: var(--accent); }
+    .footer { background: var(--bg-alt); padding: 32px 24px; text-align: center; font-size: 13px; color: var(--light); margin-top: 40px; }
+    .staff-card { background: var(--bg-alt); border-radius: 12px; padding: 20px 24px; margin: 12px 0; }
+    .staff-card strong { display: block; font-size: 16px; color: var(--accent); margin-bottom: 8px; }
+    .size-note { font-size: 12px; color: var(--mid); display: block; }
+  </style>
+</head>
+<body>
+  <nav class="site-nav"><div class="site-nav-inner"><a class="logo" href="index.html">FurFamily 毛孩家族</a><a class="back" href="index.html">← 返回首頁</a></div></nav>
+  <div class="content">
+
+    <h1>寵物美容服務</h1>
+    <p class="subtitle">Pet Grooming Services — 專業洗護、造型修剪、SPA護理，日本認證美容師駐場</p>
+
+    <div class="note">
+      <strong>營業時間：</strong>每日 10:00–20:00（全年無休，農曆新年除外）<br>
+      <strong>預約：</strong>建議提前 WhatsApp +852 9123 4567 預約。週末及公眾假期特別繁忙，建議至少提前 2–3 天預約。Walk-in 客人視乎當日排期安排，不保證即時服務。
+    </div>
+
+    <h2>狗狗美容價目表</h2>
+
+    <h3>基本洗澡吹乾 Basic Wash &amp; Dry</h3>
+    <p style="margin-bottom:12px;">包含：日本進口天然洗毛液沐浴、吹乾定型、剪指甲、清潔耳朵、擠肛門腺。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>體型</th>
+          <th>犬種例子</th>
+          <th>價格（HKD）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>小型犬<span class="size-note">10 公斤以下</span></td>
+          <td>貴婦犬（Poodle）、博美（Pomeranian）、比熊（Bichon Frise）、約瑟爹利（Yorkshire Terrier）、芝娃娃（Chihuahua）</td>
+          <td><strong>HK$280</strong></td>
+        </tr>
+        <tr>
+          <td>中型犬<span class="size-note">10–25 公斤</span></td>
+          <td>柴犬（Shiba Inu）、哥基（Corgi）、雪納瑞（Schnauzer）、可卡犬（Cocker Spaniel）、比格犬（Beagle）</td>
+          <td><strong>HK$380</strong></td>
+        </tr>
+        <tr>
+          <td>大型犬<span class="size-note">25 公斤以上</span></td>
+          <td>金毛尋回犬（Golden Retriever）、拉布拉多（Labrador）、哈士奇（Husky）、薩摩耶（Samoyed）、德國牧羊犬</td>
+          <td><strong>HK$580</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>全套美容 Full Grooming（洗澡 + 造型修剪）</h3>
+    <p style="margin-bottom:12px;">包含基本洗澡吹乾所有項目，加上全身造型修剪。美容師會根據犬種標準或主人要求進行造型設計，修剪前會確認造型方向。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>體型</th>
+          <th>價格（HKD）</th>
+          <th>所需時間</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>小型犬</td>
+          <td><strong>HK$380</strong></td>
+          <td>約 1.5 小時</td>
+        </tr>
+        <tr>
+          <td>中型犬</td>
+          <td><strong>HK$480</strong></td>
+          <td>約 2 小時</td>
+        </tr>
+        <tr>
+          <td>大型犬</td>
+          <td><strong>HK$780</strong></td>
+          <td>約 2.5–3 小時</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>SPA 豪華套餐 Spa Package</h3>
+    <p style="margin-bottom:12px;">全方位寵物護理體驗。包含全套美容所有項目，另加：深層護髮素護理、肉球護理霜、指甲磨甲、牙齒清潔、護膚精華噴霧。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>體型</th>
+          <th>價格（HKD）</th>
+          <th>所需時間</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>小型犬</td>
+          <td><strong>HK$480</strong></td>
+          <td>約 2 小時</td>
+        </tr>
+        <tr>
+          <td>中型犬</td>
+          <td><strong>HK$680</strong></td>
+          <td>約 2.5 小時</td>
+        </tr>
+        <tr>
+          <td>大型犬</td>
+          <td><strong>HK$980</strong></td>
+          <td>約 3–3.5 小時</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>犬種專屬造型 Breed-Specific Cuts</h2>
+
+    <h3>貴婦犬（Poodle）— Teddy Bear Cut 泰迪熊造型</h3>
+    <p>將臉部修剪成渾圓可愛的泰迪熊輪廓，全身統一留毛約 2–3 厘米，腳部修成圓柱形。是香港最受歡迎的 Poodle 造型。按全套美容價格收費，修剪前美容師會確認主人的造型偏好（毛長、臉型圓度等）。</p>
+
+    <h3>比熊犬（Bichon Frise）— Round Cut 圓球造型</h3>
+    <p>頭部修剪成完美圓球，身體保持蓬鬆圓潤，腳部圓潤收邊。建議每 4–6 週美容一次以維持造型。比熊毛質容易打結，如有嚴重毛結需加收開結費。</p>
+
+    <h3>雪納瑞（Schnauzer）— Standard Cut 標準造型</h3>
+    <p>保留品種標準：鮮明的眉毛及鬍鬚，背部及兩側貼身修短，四肢留適當長度。按中型犬全套美容 HK$480 收費。首次做標準造型建議帶參考照片。</p>
+
+    <h3>博美犬（Pomeranian）— Lion Cut 獅子造型</h3>
+    <p>前胸及頭部保留蓬鬆鬃毛，身體後半部修短，尾巴維持球狀。注意：博美犬剃短後毛質可能改變（Pom Alopecia），建議主人預約時諮詢美容師意見。收費 HK$420。</p>
+
+    <h2>貓咪美容 Cat Grooming</h2>
+    <p style="margin-bottom:12px;">由資深貓咪美容師張小芳專責處理，手法溫柔細心，確保過程安全舒適。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>服務項目</th>
+          <th>價格（HKD）</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>基本洗澡吹乾</td>
+          <td><strong>HK$380</strong></td>
+          <td>短毛貓；長毛貓（波斯、布偶等）加 HK$80</td>
+        </tr>
+        <tr>
+          <td>全套美容（含修剪）</td>
+          <td><strong>HK$480</strong></td>
+          <td>包含剪指甲、清耳朵、全身修剪整理</td>
+        </tr>
+        <tr>
+          <td>獅子造型 Lion Cut</td>
+          <td><strong>HK$580</strong></td>
+          <td>適合長毛品種；頭部、四肢末端及尾巴保留毛髮</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <strong>貓咪美容須知：</strong>首次到店請攜帶疫苗接種記錄（針卡）。極度緊張的貓咪可能需分次進行或諮詢獸醫後再安排。如貓咪從未洗澡，建議預約時提前告知，方便美容師作充分準備。
+    </div>
+
+    <h2>附加服務 Add-On Services</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>服務項目</th>
+          <th>價格（HKD）</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>牙齒清潔 Teeth Cleaning</td>
+          <td><strong>HK$80</strong></td>
+          <td>使用寵物專用牙膏及指套進行表面清潔（非超聲波洗牙）</td>
+        </tr>
+        <tr>
+          <td>開結服務 De-matting</td>
+          <td><strong>HK$50–HK$200</strong></td>
+          <td>輕微打結 HK$50，中度 HK$100，嚴重 HK$200。極嚴重者可能需要剃短，開始前與主人確認</td>
+        </tr>
+        <tr>
+          <td>除蚤浴 Flea Bath</td>
+          <td><strong>+HK$100</strong></td>
+          <td>使用專業除蚤洗毛液配合深層清洗；建議同步進行家居除蚤</td>
+        </tr>
+        <tr>
+          <td>美甲彩繪 Nail Art</td>
+          <td><strong>HK$120</strong></td>
+          <td>使用寵物安全無毒指甲油，多款顏色及花樣可選</td>
+        </tr>
+        <tr>
+          <td>指甲磨甲 Nail Grinding</td>
+          <td><strong>HK$50</strong></td>
+          <td>電動磨甲器磨滑剪後指甲邊緣，避免劃傷主人或家具</td>
+        </tr>
+        <tr>
+          <td>藥浴 Medicated Bath</td>
+          <td><strong>+HK$120</strong></td>
+          <td>適合皮膚敏感或有皮膚問題的寵物，建議事先諮詢獸醫</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>美容師團隊 Our Groomers</h2>
+
+    <div class="staff-card">
+      <strong>陳美玲 Mei-Ling Chan — 首席美容師 Head Groomer</strong>
+      <p>擁有超過 15 年寵物美容經驗，持有日本 JKC（Japan Kennel Club）認證，曾在東京進修犬種標準造型及競賽美容技術。精通貴婦犬、比熊犬、雪納瑞等需要精細修剪的犬種。曾代表香港參加亞洲寵物美容大賽並獲獎。對每位毛孩都以耐心和愛心對待，深受客人信賴。</p>
+    </div>
+
+    <div class="staff-card">
+      <strong>張小芳 Siu-Fong Cheung — 資深美容師（貓咪專科）</strong>
+      <p>8 年寵物美容經驗，為本店貓咪美容主責美容師。以極度耐心和輕柔手法見稱，專門處理緊張、害怕或不合作的貓咪及狗狗。許多其他店無法處理的「困難毛孩」在她手中都能順利完成美容。如您的寵物特別緊張或是第一次美容，預約時可指定張小芳服務。</p>
+    </div>
+
+    <h2>重要須知</h2>
+    <ul>
+      <li><strong>首次到店：</strong>請攜帶寵物疫苗接種記錄（針卡），幼犬需滿 3 個月並完成首次疫苗後才可接受美容服務。</li>
+      <li><strong>美容前準備：</strong>美容前 2 小時避免餵食，減少寵物在過程中的不適感。</li>
+      <li><strong>健康狀況：</strong>如寵物有皮膚病、正在服藥或懷孕，請預約時提前告知，部分情況可能需獸醫同意書。</li>
+      <li><strong>毛結處理：</strong>毛髮嚴重打結者，美容師會於開始前與主人溝通並確認處理方式，不會在未獲同意下剃短。</li>
+      <li><strong>等候通知：</strong>美容完成後以 WhatsApp 通知主人接回。超過 2 小時未接回，將酌收 HK$50/小時寄存費。</li>
+      <li><strong>會員套票優惠：</strong>購買 5 次全套美容套票享 9 折，10 次套票享 85 折。詳情向門店職員查詢。</li>
+    </ul>
+
+  </div>
+  <footer class="footer">
+    <p>FurFamily 毛孩家族 | 尖沙咀廣東道30號新港中心地下G15號舖</p>
+    <p style="margin-top:4px;">電話: +852 2123 4567 | WhatsApp: +852 9123 4567</p>
+    <p style="margin-top:4px;">營業時間: 每日 10:00-21:00 | 假日 11:00-20:00</p>
+  </footer>
+</body>
+</html>

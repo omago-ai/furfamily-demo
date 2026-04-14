@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寵物酒店 | FurFamily 毛孩家族</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #e85d3a; --accent-hover: #d14e2d; --black: #1a1a1a; --dark: #333; --mid: #666; --light: #999; --border: #e8e8e8; --bg-alt: #f5f5f5; --green: #2d8f4e; --yellow: #f5a623; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans TC', 'Inter', -apple-system, sans-serif; color: var(--black); line-height: 1.7; background: #fff; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    .site-nav { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
+    .site-nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .site-nav a.logo { font-size: 18px; font-weight: 800; color: var(--black); text-decoration: none; }
+    .site-nav a.back { font-size: 14px; color: var(--mid); }
+    .content { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { color: var(--mid); font-size: 15px; margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 12px; }
+    p, li { font-size: 15px; color: var(--dark); }
+    ul, ol { padding-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+    th { background: var(--bg-alt); text-align: left; padding: 12px; font-weight: 600; border-bottom: 2px solid var(--border); }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    .in-stock { color: var(--green); font-weight: 600; }
+    .low-stock { color: var(--yellow); font-weight: 600; }
+    .out-of-stock { color: #d32f2f; font-weight: 600; }
+    .note { background: var(--bg-alt); border-left: 3px solid var(--accent); padding: 16px; margin: 16px 0; border-radius: 0 8px 8px 0; font-size: 14px; }
+    .price-card { background: var(--bg-alt); border-radius: 12px; padding: 20px; margin: 12px 0; }
+    .price-card h4 { font-size: 16px; margin-bottom: 8px; font-weight: 700; }
+    .price-card .price { font-size: 24px; font-weight: 800; color: var(--accent); }
+    .price-card p { font-size: 14px; color: var(--mid); margin-top: 8px; }
+    .room-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 16px 0 24px; }
+    .footer { background: var(--bg-alt); padding: 32px 24px; text-align: center; font-size: 13px; color: var(--light); margin-top: 40px; }
+    .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <nav class="site-nav"><div class="site-nav-inner"><a class="logo" href="index.html">FurFamily 毛孩家族</a><a class="back" href="index.html">← 返回首頁</a></div></nav>
+  <div class="content">
+
+    <h1>寵物酒店</h1>
+    <p class="subtitle">Pet Hotel — 尖沙咀優質寵物寄宿服務，每日 WhatsApp 相片報告，24/7 緊急獸醫支援</p>
+
+    <div class="note">
+      <strong>入住時間：</strong>每日 10:00–12:00 辦理入住 | <strong>退房時間：</strong>每日 14:00–16:00 辦理退房<br>
+      逾時退房（16:00 後）須加收 <strong>HK$100</strong> 逾時費。如需安排接送，請參閱<a href="pet-taxi.html">寵物接送服務</a>。
+    </div>
+
+    <h2>房型選擇及價格</h2>
+
+    <div class="room-grid">
+      <div class="price-card">
+        <h4>標準房 Standard Room</h4>
+        <div class="price">HK$280<span style="font-size:15px;font-weight:400;color:var(--mid);">/晚</span></div>
+        <p>適合 10 公斤以下小型犬。獨立睡床、玩具及飲水碗，溫控環境，每日清潔。</p>
+      </div>
+      <div class="price-card">
+        <h4>豪華房 Deluxe Room</h4>
+        <div class="price">HK$380<span style="font-size:15px;font-weight:400;color:var(--mid);">/晚</span></div>
+        <p>適合 10–25 公斤中型犬。更寬敞空間、高級睡墊、互動玩具，每日相片更新。</p>
+      </div>
+      <div class="price-card">
+        <h4>VIP 套房 VIP Suite</h4>
+        <div class="price">HK$580<span style="font-size:15px;font-weight:400;color:var(--mid);">/晚</span></div>
+        <p>適合大型犬或需要豪華住宿的毛孩。獨立大空間、真皮睡床、每日 2 次相片更新、優先散步時段。</p>
+      </div>
+      <div class="price-card">
+        <h4>貓咪房 Cat Room</h4>
+        <div class="price">HK$250<span style="font-size:15px;font-weight:400;color:var(--mid);">/晚</span></div>
+        <p>貓咪專屬獨立區域，與狗狗完全隔離。設有攀爬架、躲藏盒、貓砂盤，安靜舒適環境。</p>
+      </div>
+    </div>
+
+    <h2>每日服務包含</h2>
+    <ul>
+      <li><strong>餐飲：</strong>每日 2 餐（早上及傍晚），使用主人提供的食物或本店優質乾糧</li>
+      <li><strong>散步：</strong>狗狗每日 3 次戶外散步（早、午、晚），每次約 15–20 分鐘</li>
+      <li><strong>WhatsApp 相片更新：</strong>每日至少 1 次傳送毛孩照片予主人，讓您放心出行</li>
+      <li><strong>互動玩耍：</strong>職員每日定時與寵物互動及玩耍，保持身心健康</li>
+      <li><strong>24/7 緊急獸醫支援：</strong>本店與鄰近尖沙咀獸醫診所保持緊急聯絡，如有任何健康狀況立即處理並通知主人</li>
+      <li><strong>環境清潔：</strong>每日定時清潔及消毒所有房間，維持衛生環境</li>
+    </ul>
+
+    <h2>入住要求</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>要求事項</th>
+          <th>詳情</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>疫苗接種</td>
+          <td>所有疫苗須於 <strong>1 年內</strong>接種（狗狗：狂犬病、DHPPi；貓咪：FVRCP）。入住時須出示疫苗記錄。</td>
+        </tr>
+        <tr>
+          <td>防蚤防蜱</td>
+          <td>須於 <strong>1 個月內</strong>完成防蚤防蜱處理（滴劑或項圈均可）。</td>
+        </tr>
+        <tr>
+          <td>絕育要求</td>
+          <td>入住<strong>不強制要求</strong>絕育，但未絕育的狗狗如正值發情期，需提前告知以安排適當隔離。</td>
+        </tr>
+        <tr>
+          <td>健康狀況</td>
+          <td>患有傳染病或嚴重疾病的寵物暫不接受入住，以保護其他寄宿毛孩。</td>
+        </tr>
+        <tr>
+          <td>個人物品</td>
+          <td>歡迎攜帶毛孩習慣的睡床、玩具或毛毯，熟悉氣味有助適應新環境。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>假期及長住優惠</h2>
+
+    <h3>旺季附加費 Peak Season Surcharge</h3>
+    <div class="note">
+      以下旺季期間所有房型加收 <strong>30%</strong> 附加費，旺季期間名額有限，建議盡早預約：
+      <ul style="margin-top:8px;">
+        <li>聖誕節及新年：12 月 23 日 – 1 月 2 日</li>
+        <li>農曆新年：除夕至年初七（每年日期不同）</li>
+        <li>復活節：Good Friday – Easter Monday</li>
+      </ul>
+    </div>
+
+    <h3>長住折扣 Long Stay Discount</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>住宿天數</th>
+          <th>折扣</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7 晚或以上</td>
+          <td><strong class="in-stock">9 折（85折後）</strong></td>
+          <td>連續住宿 7 晚，享 10% 折扣</td>
+        </tr>
+        <tr>
+          <td>14 晚或以上</td>
+          <td><strong class="in-stock">85 折</strong></td>
+          <td>連續住宿 14 晚，享 15% 折扣</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="color:var(--mid);font-size:13px;">注意：長住折扣不與旺季附加費同時計算；旺季期間以附加費為準，長住折扣暫停。</p>
+
+    <h2>預約及入住流程</h2>
+    <ol>
+      <li><strong>WhatsApp 預約：</strong>發送訊息至 +852 9123 4567，告知寵物名字、品種、體重、入住及退房日期、房型選擇</li>
+      <li><strong>確認及付款：</strong>職員確認名額後，需付 <strong>50% 訂金</strong>以確保預約</li>
+      <li><strong>準備入住資料：</strong>準備疫苗記錄、寵物慣用食物（建議自攜 1–2 天份量以上以防延誤）、緊急聯絡電話</li>
+      <li><strong>辦理入住：</strong>於入住當日 10:00–12:00 到店，職員會進行健康檢查並填寫入住表格</li>
+      <li><strong>退房：</strong>於 14:00–16:00 到店接回毛孩，職員會報告住宿期間的情況及任何需要注意事項</li>
+    </ol>
+
+    <div class="note">
+      <strong>緊急情況處理：</strong>如寵物在住宿期間出現任何健康問題，職員會立即致電通知主人，並視情況安排就近獸醫診症。所有獸醫費用由主人承擔，請確保提供可聯絡的緊急電話號碼。
+    </div>
+
+  </div>
+  <footer class="footer">
+    <p>FurFamily 毛孩家族 | 尖沙咀廣東道30號新港中心地下G15號舖</p>
+    <p style="margin-top:4px;">電話: +852 2123 4567 | WhatsApp: +852 9123 4567</p>
+    <p style="margin-top:4px;">營業時間: 每日 10:00-21:00 | 假日 11:00-20:00</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寵物接送服務 | FurFamily 毛孩家族</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #e85d3a; --accent-hover: #d14e2d; --black: #1a1a1a; --dark: #333; --mid: #666; --light: #999; --border: #e8e8e8; --bg-alt: #f5f5f5; --green: #2d8f4e; --yellow: #f5a623; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans TC', 'Inter', -apple-system, sans-serif; color: var(--black); line-height: 1.7; background: #fff; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    .site-nav { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
+    .site-nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .site-nav a.logo { font-size: 18px; font-weight: 800; color: var(--black); text-decoration: none; }
+    .site-nav a.back { font-size: 14px; color: var(--mid); }
+    .content { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { color: var(--mid); font-size: 15px; margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 12px; }
+    p, li { font-size: 15px; color: var(--dark); }
+    ul, ol { padding-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+    th { background: var(--bg-alt); text-align: left; padding: 12px; font-weight: 600; border-bottom: 2px solid var(--border); }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    .in-stock { color: var(--green); font-weight: 600; }
+    .low-stock { color: var(--yellow); font-weight: 600; }
+    .out-of-stock { color: #d32f2f; font-weight: 600; }
+    .note { background: var(--bg-alt); border-left: 3px solid var(--accent); padding: 16px; margin: 16px 0; border-radius: 0 8px 8px 0; font-size: 14px; }
+    .price-card { background: var(--bg-alt); border-radius: 12px; padding: 20px; margin: 12px 0; }
+    .price-card h4 { font-size: 16px; margin-bottom: 8px; font-weight: 700; }
+    .price-card .price { font-size: 24px; font-weight: 800; color: var(--accent); }
+    .price-card p { font-size: 14px; color: var(--mid); margin-top: 8px; }
+    .zone-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 16px 0 24px; }
+    .footer { background: var(--bg-alt); padding: 32px 24px; text-align: center; font-size: 13px; color: var(--light); margin-top: 40px; }
+    .free-tag { display: inline-block; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <nav class="site-nav"><div class="site-nav-inner"><a class="logo" href="index.html">FurFamily 毛孩家族</a><a class="back" href="index.html">← 返回首頁</a></div></nav>
+  <div class="content">
+
+    <h1>寵物接送服務</h1>
+    <p class="subtitle">Pet Taxi Service — 安全舒適的寵物專車，接送往返美容及酒店，需提前 24 小時預約</p>
+
+    <div class="note">
+      <strong>預約須知：</strong>所有接送服務須提前 <strong>至少 24 小時</strong> WhatsApp 預約（+852 9123 4567）。臨時預約視乎車輛排期安排，不保證即時服務。請確保寵物已準備好（置於外出籠或繫好牽引繩）。
+    </div>
+
+    <h2>接送收費</h2>
+
+    <div class="zone-grid">
+      <div class="price-card">
+        <h4>九龍區 Kowloon</h4>
+        <div class="price">HK$120<span style="font-size:15px;font-weight:400;color:var(--mid);">/單程</span></div>
+        <p>尖沙咀、旺角、油麻地、紅磡、黃大仙、九龍城、深水埗等九龍各區</p>
+      </div>
+      <div class="price-card">
+        <h4>香港島 HK Island</h4>
+        <div class="price">HK$200<span style="font-size:15px;font-weight:400;color:var(--mid);">/單程</span></div>
+        <p>中環、灣仔、銅鑼灣、北角、跑馬地、薄扶林、香港仔、鴨脷洲等港島各區</p>
+      </div>
+      <div class="price-card">
+        <h4>新界 New Territories</h4>
+        <div class="price">HK$280<span style="font-size:15px;font-weight:400;color:var(--mid);">/單程</span></div>
+        <p>沙田、大埔、元朗、屯門、將軍澳、西貢、荃灣、葵涌等新界各區</p>
+      </div>
+    </div>
+
+    <h3>來回接送優惠</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>地區</th>
+          <th>單程</th>
+          <th>來回（優惠價）</th>
+          <th>慳</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>九龍區</td>
+          <td>HK$120</td>
+          <td><strong>HK$220</strong></td>
+          <td class="in-stock">慳 HK$20</td>
+        </tr>
+        <tr>
+          <td>香港島</td>
+          <td>HK$200</td>
+          <td><strong>HK$380</strong></td>
+          <td class="in-stock">慳 HK$20</td>
+        </tr>
+        <tr>
+          <td>新界</td>
+          <td>HK$280</td>
+          <td><strong>HK$520</strong></td>
+          <td class="in-stock">慳 HK$40</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>免費接送優惠</h2>
+    <div class="note">
+      <strong><span class="free-tag">免費</span> 九龍區免費接送：</strong>凡入住本店寵物酒店 <strong>5 晚或以上</strong>，可享九龍區單程免費接送（送店或接回各一次）。<br><br>
+      此優惠適用於九龍區（含尖沙咀、旺角、油麻地、紅磡、黃大仙、九龍城、深水埗、長沙灣等），預約時請告知以安排。
+    </div>
+
+    <h2>服務詳情</h2>
+
+    <h3>車輛及安全</h3>
+    <ul>
+      <li>使用寵物專用廂型車，備有固定籠架，確保行車安全</li>
+      <li>車廂定期清潔消毒，維持衛生環境</li>
+      <li>空調設備完善，夏天保持適宜車廂溫度</li>
+      <li>司機均受過寵物基本急救訓練</li>
+    </ul>
+
+    <h3>乘車要求</h3>
+    <ul>
+      <li><strong>外出籠：</strong>貓咪及小型犬（10 公斤以下）須置於外出籠內乘車，請確保籠門鎖好</li>
+      <li><strong>牽引繩：</strong>中大型犬可使用車廂固定繩繫好，但建議同時使用外出籠以策安全</li>
+      <li><strong>不接受未固定寵物：</strong>任何未置於籠內或未繫好的寵物恕不接受上車，確保行車安全</li>
+      <li><strong>攻擊性寵物：</strong>如寵物曾有咬人記錄，請預約時提前告知，以安排適當措施</li>
+    </ul>
+
+    <h3>預約流程</h3>
+    <ol>
+      <li>WhatsApp +852 9123 4567，提供以下資料：
+        <ul>
+          <li>寵物名字及品種</li>
+          <li>接送地址（出發地及目的地）</li>
+          <li>接送日期及時間</li>
+          <li>服務類型（送往美容、酒店入住或退房接回等）</li>
+        </ul>
+      </li>
+      <li>職員確認時間及費用後，請於預約時間前 10 分鐘在指定地點等候</li>
+      <li>接送完成後以現金或轉數快（FPS）付款</li>
+    </ol>
+
+    <h3>等候及取消政策</h3>
+    <ul>
+      <li>司機到達後會 WhatsApp 通知，請於 <strong>5 分鐘內</strong>下樓或出門，逾時可能需要重新排期</li>
+      <li>如需取消預約，請於接送時間 <strong>3 小時前</strong> 通知，否則須收取 HK$50 取消費</li>
+      <li>惡劣天氣（黑色暴雨、10 號颱風）期間暫停服務，費用全額退回或重新安排</li>
+    </ul>
+
+    <div class="note">
+      <strong>離島及特殊地區：</strong>大嶼山（東涌以外地區）、南丫島、長洲等離島地區，接送費用需另行報價。請 WhatsApp 查詢。
+    </div>
+
+  </div>
+  <footer class="footer">
+    <p>FurFamily 毛孩家族 | 尖沙咀廣東道30號新港中心地下G15號舖</p>
+    <p style="margin-top:4px;">電話: +852 2123 4567 | WhatsApp: +852 9123 4567</p>
+    <p style="margin-top:4px;">營業時間: 每日 10:00-21:00 | 假日 11:00-20:00</p>
+  </footer>
+</body>
+</html>
